@@ -1,3 +1,5 @@
 class User < ApplicationRecord
-    has many :reviews
+    has many :reviews, through: :doctor
+
+    belongs_to :doctor 
 end
